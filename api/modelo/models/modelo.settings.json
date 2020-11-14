@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modelos",
+  "info": {
+    "name": "Modelo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Redes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.social"
+    }
+  }
+}

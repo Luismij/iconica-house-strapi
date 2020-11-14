@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_links_socials",
+  "info": {
+    "name": "Social",
+    "icon": "globe"
+  },
+  "options": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "red_social": {
+      "type": "string"
+    }
+  }
+}
